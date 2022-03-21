@@ -1,0 +1,89 @@
+.vscroller .sub-title{
+	color:#fff;
+}
+.vscroller h1{
+	color:#fff;
+	font-size:30px;
+	position:relative;
+	line-height:normal;
+}
+.vscroller a, .page-title a{
+	color:#fff;
+}
+.vscroller a:hover, .page-title a:hover{
+	color:#000;
+}
+.page-title{
+	font-size:12px;
+	text-transform:uppercase;
+	margin:0 0 25px 0;
+}
+
+/*****************************/
+.vscroller {
+    /*border: 0;
+    border-radius: 4px;*/
+    position: relative;
+    overflow: hidden;
+    height: 320px;
+}
+
+.vscroller-content {
+    position: relative;
+    padding: 0 10px 0 0;
+    margin-right: 20px;
+	
+}
+
+.vscroller-scroll-body {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background: #000;
+    width: 5px;
+    border-radius: 8px;
+    /*opacity: 0.5;*/
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+}
+
+.vscroller-drag .vscroller-scroll-body,
+.vscroller-scroll-body:hover {
+    opacity: 1;
+}
+
+.vscroller-scroll {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    width: 5px;
+    height: 45px;
+    border-radius: 8px;
+    transition: background-color 0.25s;
+    -webkit-transition: background-color 0.25s;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.vscroller-scroll:focus {
+    background: #fff;
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+
+}
+
+
+
+
+
+@media only screen and (max-width: 640px) {
+.vscroller-content {
+	 margin-right: 20px;
+	
+}
+}
